@@ -19,3 +19,4 @@ A simple application that enables you to generate names by country and by gender
 * FETCH API
 * REST API
 * AJAX 
+* ES 6
