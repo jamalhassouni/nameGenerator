@@ -6,7 +6,7 @@ A simple application that enables you to generate names by country and by gender
 
 * Send parameters to the REST API based on the infromation provided by the user in the HTML Form.
 
-* Print the results from the REST API with FETCH API ,AJAX y ASYNC/AWAIT
+* Print the results from the [REST API](https://github.com/thm/uinames) with FETCH API ,AJAX y ASYNC/AWAIT
 
 * Use intermediate techniques such as async JavaScript , Arrow Functions & JSON.
 
