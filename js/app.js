@@ -41,5 +41,21 @@ function loadNames(e) {
     }
 
 
-  console.log(url);
+ // Ajax Call
+ const  xhr= new XMLHttpRequest();
+
+ //  Open the connection
+   xhr.open('GET', url);
+
+   //  Execute the function
+   xhr.onload = function () {
+   	   if(this.status === 200) {
+           const  names = JSON.parse(this.responseText);
+            console.log(names);
+   	   }
+   }
+
+     // Send the  request
+    xhr.send();
 }
+
