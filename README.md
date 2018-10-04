@@ -1,8 +1,8 @@
 ## Name Generator
 
-A simple application that enables you to generate names by country and by gender using JavaScript 
+A simple application that enables you to generate names by country and by gender using JavaScript
 
-* Consume the data from a REST API 
+* Consume the data from a REST API
 
 * Send parameters to the REST API based on the infromation provided by the user in the HTML Form.
 
@@ -10,7 +10,10 @@ A simple application that enables you to generate names by country and by gender
 
 * Use intermediate techniques such as async JavaScript , Arrow Functions & JSON.
 
- 
+
+![preview](screenshots/preview.png)
+
+
 ## Technology
 
 * HTML
@@ -18,5 +21,5 @@ A simple application that enables you to generate names by country and by gender
 * JavaScript
 * FETCH API
 * REST API
-* AJAX 
+* AJAX
 * ES 6
