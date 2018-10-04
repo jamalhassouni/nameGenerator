@@ -2,6 +2,7 @@
 
 A simple application that enables you to generate names by country and by gender using JavaScript
 
+## Features
 * Consume the data from a REST API
 
 * Send parameters to the REST API based on the infromation provided by the user in the HTML Form.
