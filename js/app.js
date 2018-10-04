@@ -2,7 +2,7 @@ document.querySelector("#generate-names").addEventListener("submit", loadNames);
 
 // Execute the function to query the Api
 
-function loadNames (e) {
+function loadNames(e) {
 	e.preventDefault();
 
 	// Read the values from the form and create the variables
@@ -34,14 +34,13 @@ function loadNames (e) {
 	}
 
 	// Fetch Api
-	fetch(url)
-		.then(response => response.json())
-		.then(names => {
+	getNames(url)
+		.then(data => {
 			let html = "<h2>Generated Names</h2>";
 			html += '<ul class="list">';
-			names.forEach(data => {
+			data.names.forEach(names => {
 				html += `
-                 <li>${data.name}</li>
+                 <li>${names.name}</li>
               `;
 			});
 
@@ -50,4 +49,11 @@ function loadNames (e) {
 			document.querySelector("#result").innerHTML = html;
 		})
 		.catch(error => console.log(error));
-};
+}
+
+async function getNames(url) {
+	const response = await fetch(url);
+	const names = await response.json();
+
+	return { names };
+}
